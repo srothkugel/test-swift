@@ -110,7 +110,7 @@ RUN cd sourcekit-lsp/Editors/vscode \
     && vsce package -o ./sourcekit-lsp.vsix
 
 
-FROM node:$NODE_VERSION as theia-builder
+# FROM node:$NODE_VERSION as theia-builder
 ARG version=latest
 WORKDIR /home/theia
 ADD $version.package.json ./package.json
